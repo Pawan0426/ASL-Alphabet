@@ -13,3 +13,23 @@ To run the project, ensure you have the following libraries installed:
 - Pickle (`pickle`)
 
 You can install these libraries using pip:
+
+
+## Usage
+1. **Setup**: Clone the repository and install the required libraries.
+   
+2. **Model Loading**: The trained Random Forest model (`asl_rf_model.pkl`) is loaded using Pickle. It predicts the ASL signs based on hand landmarks detected by MediaPipe.
+
+3. **Real-time Prediction**: Run the script `cv2Signlan.py` to open your webcam and start predicting ASL signs based on your hand gestures.
+
+4. **Recording**: The script records the webcam feed and overlays predicted labels on the video frames. It saves the output to `output.avi`.
+
+5. **Termination**: Press 'q' on your keyboard to exit the application.
+
+## Additional Notes
+- The model was trained on hand landmarks extracted by MediaPipe's hand tracking solution, ensuring accurate recognition of ASL gestures in real-time.
+- Feel free to customize the model or integrate other machine learning techniques for further improvement.
+
+## Contact
+For any questions or suggestions, feel free to reach out to the repository owner.
+
